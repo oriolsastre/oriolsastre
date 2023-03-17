@@ -65,7 +65,7 @@
     - Tecnologies: PHP, MySQL, HTML, CSS, Javascript.
     - En progés: La idea també és refer-lo, potser també amb Laravel.
   - __Xat amb Sockets__ Aplicació de xat en línia. Projecte final del bootcamp a la IT-Academy de Barcelona.
-    - [Repositori](https://github.com/oriolsastre/nodeInitialDemo/tree/sprint5)
+    - [Repositori](https://github.com/oriolsastre/xat-sockets)
     - Web: 
     - Tecnologies: NodeJS, Express, Socket.io, MySQL, Docker, HTML, CSS, Javascript.
   - __API Daus__ API que gestiona un Joc de Daus, fet com a exercici a la IT-Academy.
