@@ -50,11 +50,25 @@
 </div>
 </td></tr></table>
   
-  ## Exemples
-  - HTML+CSS+JS <-> PHP+MySQL
-    - Piscina: Petita aplicació per controlar l'estat d'una piscina. Funcionalitat només disponibles per a usuaris. ([Repositori](http://github.com/oriolsastre/pscina))(http://sastre.cat/piscina) [WIP]
-    - Llibres: Col·lecció privada de llibres. Per catalogar-los, desar passatges que hagin agradat, quan han estat llegits, d'on els he obtingut... Especialment per gestionar el "Mapa Literari" (http://sastre.cat/llibres/mapa_literari.php), ubicacions dels llibres que he llegit. [WIP]
-    - GCDB: Geocaching Database. Per gestionar els meus progessos a www.geocaching.com. (http://sastre.cat/gcdb) [WIP]
-  - NodeJS + Express
-    - API Daus: API que gestiona un Joc de Daus, fet com a exercici a la IT-Academy ([Repositori](https://github.com/oriolsastre/nodeInitialDemo/tree/sprint4_2)).
-    - Xat: Una aplicació d'un xat en línea. Fet com a exercici a la IT-Academy ([Repositori](https://github.com/oriolsastre/nodeInitialDemo/tree/sprint5)) [WIP] 
+  ## Projectes
+  - __GCDB__ Geocaching Database. Per gestionar els meus progessos a www.geocaching.com.
+    - Web: http://sastre.cat/gcdb
+    - Tecnologies: PHP, MySQL, HTML, CSS, Javascript
+    - En progés: Actualment estic migrant-ho en un projecte de Laravel. Usant TailwindCSS per al front. Encara en desenvolupament, no disponible.
+  - __Piscina__ Petita aplicació per controlar l'estat d'una piscina, mantenir el progés i veure accions proposades. Funcionalitat només disponibles per a usuaris. Dissenyat per ser vist en un dispositiu mòbil.
+    - [Repositori](http://github.com/oriolsastre/pscina)
+    - Web: http://sastre.cat/piscina
+    - Tecnologies: PHP, MySQL, HTML, CSS, Javascript
+    - En progés: Afegint funcionaliltats.
+  - __Llibres__ Col·lecció privada de llibres. Per catalogar-los, desar passatges que hagin agradat, quan han estat llegits, d'on els he obtingut... Especialment per gestionar el "Mapa Literari" (http://sastre.cat/llibres/mapa_literari.php), ubicacions dels llibres que he llegit.
+    - Web: http://sastre.cat/llibres
+    - Tecnologies: PHP, MySQL, HTML, CSS, Javascript.
+    - En progés: La idea també és refer-lo, potser també amb Laravel.
+  - __Xat amb Sockets__ Aplicació de xat en línia. Projecte final del bootcamp a la IT-Academy de Barcelona.
+    - [Repositori](https://github.com/oriolsastre/nodeInitialDemo/tree/sprint5)
+    - Web: 
+    - Tecnologies: NodeJS, Express, Socket.io, MySQL, Docker, HTML, CSS, Javascript.
+  - __API Daus__ API que gestiona un Joc de Daus, fet com a exercici a la IT-Academy.
+    - [Repositori](https://github.com/oriolsastre/nodeInitialDemo/tree/sprint4_2)
+    - Tecnologies: NodeJS, Express, MySQL, MongoDB.
+    
