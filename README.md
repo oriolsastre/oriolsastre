@@ -64,7 +64,7 @@
     - Web: http://sastre.cat/llibres
     - Tecnologies: PHP, MySQL, HTML, CSS, Javascript.
     - En progés: La idea també és refer-lo, potser també amb Laravel.
-  - __Xat amb Sockets__ Aplicació de xat en línia. Projecte final del bootcamp a la IT-Academy de Barcelona.
+  - __Moimoin__ Aplicació de xat en línia. Projecte final del bootcamp a la IT-Academy de Barcelona.
     - [Repositori](https://github.com/oriolsastre/xat-sockets)
     - Web: 
     - Tecnologies: NodeJS, Express, Socket.io, MySQL, Docker, HTML, CSS, Javascript.
