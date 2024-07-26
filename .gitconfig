@@ -1,1 +1,14 @@
 # Git config file
+[user]
+	name = El meu nom
+	email = el_meu@correu.cat
+	signingkey = C:/Ruta/a/la/clau/.shh/clau.pub
+[gpg]
+	format = ssh
+[alias]
+	co = checkout
+	now = commit --amend --no-edit --reset-author --no-verify
+	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add.; if [ \"msg\" = \"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
+	# fomo = !git fetch origin main && git rebase origin/main
+[commit]
+	gpgsign = true
