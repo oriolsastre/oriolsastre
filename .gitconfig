@@ -7,7 +7,10 @@
 	format = ssh
 [alias]
 	co = checkout
+	po = pull origin
+	gras = commit --amend --no-edit
 	now = commit --amend --no-edit --reset-author --no-verify
+	undo = reset --soft HEAD^
 	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add.; if [ \"msg\" = \"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
 	# fomo = !git fetch origin main && git rebase origin/main
 [commit]
