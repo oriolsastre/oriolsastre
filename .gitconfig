@@ -14,7 +14,7 @@
 	undo = reset --soft HEAD^
 	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add.; if [ \"msg\" = \"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
 	poda = remote update origin --prune
-	graph = log --graph --pretty=format:\"%Cgreen%an%x09%Creset%s%x09%Cblue%ah (%ad) %C(yellow)%h %Cred%d\" --date=short
+	graph = log --graph --branches --pretty=format:\"%Cgreen%an%x09%Creset%s%x09%Cblue%ah (%ad) %C(yellow)%h %Cred%d\" --date=short
 	# fomo = !git fetch origin main && git rebase origin/main
 [commit]
 	gpgsign = true
