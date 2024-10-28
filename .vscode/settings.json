@@ -1,0 +1,16 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.stickyScroll.enabled": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "tab.activeBorder": "#fd00ec"
+    }
+  },
+}
