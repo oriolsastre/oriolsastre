@@ -7,14 +7,24 @@
 	format = ssh
 [alias]
 	alias = config --get-regexp '^alias\\.'
+# 	default-branch = git branch -rl '*/HEAD' | grep -o '[^/]\+$'
+	default-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+	current-b = rev-parse --abbrev-ref HEAD
 	co = checkout
 	po = pull origin
-	gras = commit --amend --no-edit
+	rb-c = rebase --continue
+	mg-c = merge --continue
+	undo = reset --soft HEAD~1
+	undo-all = reset --soft HEAD^
 	now = commit --amend --no-edit --reset-author --no-verify
-	undo = reset --soft HEAD^
-	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add.; if [ \"msg\" = \"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
+	gras = commit --amend --no-edit
 	poda = remote update origin --prune
 	graph = log --graph --branches --pretty=format:\"%Cgreen%an%x09%Creset%s%x09%Cblue%ah (%ad) %C(yellow)%h %Cred%d\" --date=short
-	# fomo = !git fetch origin main && git rebase origin/main
+	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add.; if [ \"msg\" = \"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
+	empelt = "!f(){ branch=$(git current-b); master=$(git default-branch); git fomo && git checkout \"$master\" && git merge \"$branch\";}; f"
+	brot = "!f() { master=$(git default-branch); git checkout \"$master\"; git checkout -b \"$1\"; git fomo; }; f"
+#	fomo = !git fetch origin main && git rebase origin/main
+	fomo = "!f() { master=$(git default-branch); git fetch origin \"$master\" && git rebase origin/\"$master\"; }; f"
+#	lblame = "!f() { hash=$(git blame -L \"$2\",\"$2\" --porcelain \"$1\" | head -n 1 | cut -d ' ' -f 1); git show \"$hash\" -- \"$1\"; }; f"
 [commit]
 	gpgsign = true
