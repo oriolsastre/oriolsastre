@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# Genera un número aleatori entre 0 i 1 i el compara directament amb awk
+message=$(awk -v seed=$RANDOM 'BEGIN { srand(seed); if (rand() < 0.25) print "02107"; else if (rand() < 0.5) print "04107"; else print "5a572e" }')
+
+# See: https://github.com/not-an-aardvark/lucky-commit
+/c/Users/osastrer/Documents/dev/lucky-commit/target/release/lucky_commit.exe "$message"
+
+# Si el repo usa husky, posar el hook a .husky/ i recordar excloure'l, per exemple a .git/info/exclude
