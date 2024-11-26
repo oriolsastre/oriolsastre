@@ -20,7 +20,7 @@
 	gras = commit --amend --no-edit
 	poda = remote update origin --prune
 	graph = log --graph --branches --pretty=format:\"%Cgreen%an%x09%Creset%s%x09%Cblue%ah (%ad) %C(yellow)%h %Cred%d\" --date=short
-	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add .; if [ \"msg\"=\"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
+	wip = "!f() { msg=$(git log --format=%B -n 1 HEAD); git add .; if [ \"$msg\" = \"wip\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"wip\" --no-verify; fi; }; f"
 	empelt = "!f(){ branch=$(git current-b); master=$(git default-branch); git fomo && git checkout \"$master\" && git merge \"$branch\";}; f"
 	brot = "!f() { master=$(git default-branch); git checkout \"$master\"; git checkout -b \"$1\"; git fomo; }; f"
 #	fomo = !git fetch origin main && git rebase origin/main
