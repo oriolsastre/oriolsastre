@@ -11,6 +11,7 @@
 	default-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 	current-b = rev-parse --abbrev-ref HEAD
 	co = checkout
+	sw = switch
 	po = pull origin
 	rb-c = rebase --continue
 	mg-c = merge --continue
